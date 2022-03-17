@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    color: #f8f8f8;
+}
+
+html{
+    background-color: #212121f5;
+}
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 3rem;    
+}
+
+
+
+/* Header structure */
+
+header{
+    display: flex;
+    height: 9vh;
+    position: sticky;
+    top:0;
+}
+
+.header-one{
+     display: flex;
+    align-items: center;
+    flex: 2;
+    font-family: 'Smooch Sans', sans-serif;
+    
+}
+
+.header-one>h1{
+    font-size:1.4em;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-one>h1>sup{
+    font-weight: 100;
+    font-size: 1rem;
+    color: rgb(196, 196, 196);
+}
+
+.header-two{
+    display: flex;
+    flex: 9.5;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header-three{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex: 2.5;
+    font-size: 1.4rem;
+}
+
+
+
+/* icons change */
+
+
+#align-justify{
+    font-size: 1.5rem;
+    padding:0 1.5rem;
+}
+
+.fa.fa-youtube-play{
+    font-size: 1.8rem;
+    flex: 0;
+    padding-right: 0.3rem;
+    color:	#FF0000;
+    cursor: pointer;
+}
+
+#search{
+    height: 0rem;
+    flex-basis: 36rem;
+    padding: 1.2rem 1rem;
+    background-color: black;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+#search:focus {
+    border: 1px solid #1c62b9;
+}
+
+#search-icon{
+    font-size: 1.5rem;
+    padding: 0.4rem 1.2rem;
+    background-color:rgb(59, 59, 59);
+    cursor: pointer;
+}
+
+#mic{
+    margin-left: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 50%;
+    padding: 0.45rem ;
+    cursor: pointer;
+}
+
+
+#mic:hover{
+    background-color: rgb(63, 60, 60);
+}
+
+
+.header-three>.fa,#apps{
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.header-three>.fa:nth-child(4) {
+    font-size: 1.8rem;
+}
+
+
+
+/* body style */
+
+#main{
+    display: flex;
+    height: 91vh;
+}
+
+
+/* Left and Right body */
+
+
+#body-one{
+    flex:1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 91vh;
+    overflow: auto;
+}
+
+#body-one:hover::-webkit-scrollbar-thumb{
+    background-color: hsl(120, 2%, 41%);
+}
+
+#body-two::-webkit-scrollbar-thumb{
+    background-color: hsl(120, 2%, 41%);
+}
+
+
+.list{
+    min-height: 2.6rem;
+    width: 100%;
+    display: flex; 
+    cursor: pointer;
+}
+
+
+.list:hover{
+    background-color:rgba(255, 255, 255, 0.123);
+}
+
+.list:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.123);
+    margin-top: 0.5rem;
+}
+
+
+.list>.inner{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.list>.heading{
+    flex: 7;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.6rem;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+hr{
+    width: 90%;
+    height: 0px;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(49, 45, 45);
+}
+
+
+.heading-title{
+    padding:0.2rem 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-family: "Roboto","Arial",sans-serif;
+    color:rgb(155, 150, 150);
+}
+
+
+
+
+/*  Topic Suggestions   */
+
+.suggestions{
+    min-width: 100%;
+    background-color: #212121f5;
+    border-style: solid;
+    border-width: 0.1rem 0;
+    border-color: rgb(61, 60, 60);
+    height: 3.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1; 
+}
+
+
+.suggestions>p{
+    padding: 0.25rem 0.5rem;
+    min-width: 2rem;
+    border-radius: 2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    
+}
+
+.suggestions>p:nth-child(1) {
+    background-color: #f8f8f8;
+    color: black;
+    text-align:center;
+}
+
+.suggestions>p{
+    background-color: rgb(58, 55, 55);
+}
+
+/* Video section */
+
+
+#body-two{
+    flex:8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+    background-color: #181818;
+}
+
+
+.video-wrapper{
+    min-height: 17.5rem;
+    flex-basis: 18rem;
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.video-wrapper>a{
+    text-decoration: none;
+}
+
+
+.video-wrapper:hover{
+    cursor: pointer;
+}
+
+
+/* Youtube video hover */
+
+
+.video-wrapper:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+
+/* Videos designing */
+
+
+.thumbnail img{
+    max-height: 130rem;
+    width: 18rem;
+}
+
+.video-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 18rem;
+    overflow: hidden; 
+    padding: 0.2rem 0 0 0;
+}
+
+.video-title>.fa{
+    font-size: 2rem;
+    flex: 1;
+    box-sizing: border-box;
+    padding:0.3rem;
+}
+
+.video-title>h5{
+    flex: 9;
+    box-sizing: border-box;
+    padding:0.2rem;
+    font-weight: 600;
+}
+
+.channel-name{
+    width: 100%;
+    min-height: 1rem;
+    margin: 0.5rem 0rem;
+    box-sizing: border-box;
+    padding:0rem 3rem;
+}
+
+.channel-name>p{
+    font-size: 0.8rem;
+    color: rgb(167, 164, 164);
+}
+
